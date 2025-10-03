@@ -89,7 +89,7 @@
     /* Buscador */
     .search-box {
       text-align: center;
-      margin: 30px 0;
+      margin: 30px 0 10px;
     }
     .search-box input {
       padding: 12px;
@@ -106,6 +106,40 @@
       border-color: #f7931a;
       box-shadow: 0 0 8px rgba(247,147,26,0.5);
     }
+    /* Filtros activos */
+    .filters-summary {
+      margin: 15px auto;
+      max-width: 900px;
+      text-align: center;
+    }
+    .filter-tag {
+      display: inline-block;
+      font-size: 0.8em;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 3px;
+      cursor: pointer;
+      transition: background 0.2s;
+      color: #fff;
+    }
+    .filter-tag.category { background: #f7931a; }
+    .filter-tag.language { background: #0077cc; }
+    .filter-tag.author { background: #28a745; }
+    .filter-tag:hover { opacity: 0.8; }
+    .clear-filters {
+      display: inline-block;
+      background: #333;
+      color: #fff;
+      font-size: 0.8em;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 3px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .clear-filters:hover { background: #000; }
     /* Grid */
     .grid {
       display: grid;
@@ -128,18 +162,29 @@
       transform: translateY(-6px) scale(1.02);
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
-    .category {
+    .badges {
       position: absolute;
       top: 10px;
       left: 10px;
+      right: 10px;
+      display: flex;
+      justify-content: space-between;
+      pointer-events: none;
+    }
+    .badge {
       background: #f7931a;
       color: #fff;
-      font-size: 0.8em;
+      font-size: 0.75em;
       font-weight: bold;
       padding: 5px 10px;
       border-radius: 20px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      cursor: pointer;
+      pointer-events: all;
+      transition: background 0.2s;
     }
+    .badge.language { background: #0077cc; }
+    .badge:hover { opacity: 0.8; }
     .book-cover {
       width: 100%;
       height: 240px;
@@ -168,6 +213,11 @@
       font-size: 0.9em;
       color: #666;
       text-align: center;
+      cursor: pointer;
+    }
+    .author:hover {
+      color: #f7931a;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -201,12 +251,15 @@
   <div class="search-box">
     <input type="text" id="searchInput" placeholder="🔎 Buscar libro por título o autor...">
   </div>
+  <!-- Resumen de filtros -->
+  <div id="activeFilters" class="filters-summary"></div>
 
   <!-- Biblioteca -->
   <div class="grid" id="library"></div>
 
   <script>
     let booksData = [];
+    let activeFilters = { category: null, language: null, author: null };
 
     // Cargar libros desde JSON
     fetch('books.json')
@@ -224,25 +277,76 @@
         const div = document.createElement('div');
         div.className = 'book';
         div.innerHTML = `
-          <div class="category">${book.category}</div>
+          <div class="badges">
+            <div class="badge category" onclick="applyFilter('category','${book.category}')">${book.category}</div>
+            <div class="badge language" onclick="applyFilter('language','${book.language}')">${book.language}</div>
+          </div>
           <div class="book-cover">
             <img src="${book.cover}" alt="${book.title}">
           </div>
           <a href="${book.file}" target="_blank">${book.title}</a>
-          <div class="author">${book.author || ''}</div>
+          <div class="author" onclick="applyFilter('author','${book.author}')">${book.author || ''}</div>
         `;
         library.appendChild(div);
       });
     }
 
+    function applyFilter(type, value) {
+      if (type) {
+        activeFilters[type] = activeFilters[type] === value ? null : value;
+      }
+
+      const query = document.getElementById('searchInput').value.toLowerCase();
+
+      const filtered = booksData.filter(book => {
+        let matchesSearch =
+          book.title.toLowerCase().includes(query) ||
+          (book.author && book.author.toLowerCase().includes(query));
+        let matchesCategory = !activeFilters.category || book.category === activeFilters.category;
+        let matchesLanguage = !activeFilters.language || book.language === activeFilters.language;
+        let matchesAuthor = !activeFilters.author || book.author === activeFilters.author;
+
+        return matchesSearch && matchesCategory && matchesLanguage && matchesAuthor;
+      });
+
+      renderBooks(filtered);
+      updateFiltersSummary();
+    }
+
+    function updateFiltersSummary() {
+      const container = document.getElementById('activeFilters');
+      container.innerHTML = '';
+      let hasFilters = false;
+
+      for (let key in activeFilters) {
+        if (activeFilters[key]) {
+          hasFilters = true;
+          const tag = document.createElement('span');
+          tag.className = 'filter-tag ' + key;
+          tag.textContent = `${activeFilters[key]} ✕`;
+          tag.onclick = () => {
+            activeFilters[key] = null;
+            applyFilter(null, null);
+          };
+          container.appendChild(tag);
+        }
+      }
+
+      if (hasFilters) {
+        const clear = document.createElement('span');
+        clear.className = 'clear-filters';
+        clear.textContent = 'Limpiar filtros';
+        clear.onclick = () => {
+          activeFilters = { category: null, language: null, author: null };
+          applyFilter(null, null);
+        };
+        container.appendChild(clear);
+      }
+    }
+
     // Buscador
     document.getElementById('searchInput').addEventListener('input', function() {
-      const query = this.value.toLowerCase();
-      const filtered = booksData.filter(book =>
-        book.title.toLowerCase().includes(query) ||
-        (book.author && book.author.toLowerCase().includes(query))
-      );
-      renderBooks(filtered);
+      applyFilter(null, null);
     });
 
     // Donaciones

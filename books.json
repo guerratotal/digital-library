@@ -1,8 +1,9 @@
 [
   {
     "title": "The Self Sufficient Backyard",
-    "author": "Ron_Melchiore_Johanna_Melchiore",
+    "author": "Ron Melchiore, Johanna Melchiore",
     "category": "Self-sufficient",
+    "language": "EN",
     "cover": "covers/self-sufficient.png",
     "file": "https://drive.google.com/file/d/19JJpwN3BvrRbal6DSnYuvvw8x0jM1CRP/view?usp=sharing"
   },
@@ -10,6 +11,7 @@
     "title": "A Knight and His Weapons",
     "author": "Ewart Oakeshott",
     "category": "Weapons",
+    "language": "EN",
     "cover": "covers/knight.png",
     "file": "https://drive.google.com/file/d/1X9hurRdVrOscAxFyGyhWgreEzRs1T7Us/view?usp=drive_link"
   },
@@ -17,63 +19,240 @@
     "title": "Big Book of Secret Hiding Places",
     "author": "Luger Jack",
     "category": "Hiding",
+    "language": "EN",
     "cover": "covers/secret.png",
     "file": "https://drive.google.com/file/d/1zBzEx1b0g241WWCmAkifsDd0QrUPFNQ9/view?usp=drive_link"
   },
-    {
+  {
     "title": "Bushcraft 101",
-    "author": "Autor Anónimo",
+    "author": "Dave Canterbury",
     "category": "Bushcraft",
+    "language": "EN",
     "cover": "covers/bushcraft101.png",
     "file": "https://drive.google.com/file/d/1-ZZK-jWhrobgOEs9ujRZ3KINpTH2EHf8/view?usp=sharing"
   },
-    {
+  {
     "title": "Getaway Driving Techniques for Escape and Evasion",
     "author": "Ronald George",
     "category": "Escape",
+    "language": "EN",
     "cover": "covers/getaway.png",
     "file": "https://drive.google.com/file/d/1RGRTH4KDbc-mwqddnqiEIFMKKVpqSLYe/view?usp=sharing"
   },
-    {
+  {
     "title": "Hand Bookbinding A Manual of Instruction",
     "author": "Aldren A. Watson",
     "category": "Bookbinding",
+    "language": "EN",
     "cover": "covers/Bookbinding.png",
     "file": "https://drive.google.com/file/d/1yxaBJHOPwsqrAXJWc5wCeBIcg2Td9bPO/view?usp=sharing"
   },
-    {
+  {
     "title": "Land Navigation From Start to Finish",
     "author": "Chris Imperial",
     "category": "Navigation",
+    "language": "EN",
     "cover": "covers/landnavigation.png",
     "file": "https://drive.google.com/file/d/1FkQCccoGCtyJOXcucjbzDzTVYtNeEm56/view?usp=sharing"
   },
-    {
-    "title": "Ragnars Ten Best Traps And A Few Others That Are Damn Good Too Benson",
+  {
+    "title": "Ragnars Ten Best Traps And A Few Others That Are Damn Good Too",
     "author": "Ragnar Benson",
     "category": "Traps",
+    "language": "EN",
     "cover": "covers/traps.png",
     "file": "https://drive.google.com/file/d/1hx90_l3SDXrveXsrQHYuBc666mBDn6Ye/view?usp=sharing"
   },
-    {
+  {
     "title": "The Secrets of Jiu-jitsu",
     "author": "Ré-Nié",
     "category": "Combat",
+    "language": "EN",
     "cover": "covers/jiu jitsu.png",
     "file": "https://drive.google.com/file/d/1EzkONEwSslhLvurYKZ-o_fs0owa_u3Eq/view?usp=sharing"
   },
-    {
+  {
     "title": "Do or die - A manual on Individual Combat",
-    "author": "Colonel A. J. D. Biddle)",
+    "author": "Colonel A. J. D. Biddle",
     "category": "Combat",
+    "language": "EN",
     "cover": "covers/do_or_die.png",
     "file": "https://drive.google.com/file/d/1JyNB-N8d270cza1wm5c1VW67bqNg3GP0/view?usp=sharing"
   },
-    {
+  {
     "title": "Your Cabin In The Woods",
     "author": "Conrad Meinecke",
     "category": "Survival",
+    "language": "EN",
     "cover": "covers/yourcabininthewoods.png",
     "file": "https://drive.google.com/file/d/1nVubsOU4zNH1O0t0OqhMoTcHJsQWAUFi/view?usp=sharing"
+  },
+  {
+    "title": "KGB Alpha Team Training Manual",
+    "author": "Translated by Peter Bercé",
+    "category": "Spy",
+    "language": "EN",
+    "cover": "covers/kgb.png",
+    "file": "https://drive.google.com/file/d/1p_R_Q4pAjd2BZO17lim_Co6AodRqgHxB/view?usp=sharing"
+  },
+  {
+    "title": "The Survival Retreat: A total plan for Retreat Defense",
+    "author": "Ragnar Benson",
+    "category": "Survival",
+    "language": "EN",
+    "cover": "covers/survivarretreat.png",
+    "file": "https://drive.google.com/file/d/1nVxrNOLWDZ0wS7IAZWkYrWmw52NAuGPv/view?usp=sharing"
+  },
+  {
+    "title": "Fighting With Sticks",
+    "author": "Nick Evangelista",
+    "category": "Combat",
+    "language": "EN",
+    "cover": "covers/sticks.jpg",
+    "file": "https://drive.google.com/file/d/1aWJd-Hsy3quABqowamS_Z91YlWiuy4J_/view?usp=sharing"
+  },
+  {
+    "title": "The Complete Guide to Lock Picking",
+    "author": "Eddie The Wire",
+    "category": "Picking",
+    "language": "EN",
+    "cover": "covers/picking.jpg",
+    "file": "https://drive.google.com/file/d/1mlr4xjW9zVnc6eSD7YihYBUrp5uKbvMQ/view?usp=sharing"
+  },
+  {
+    "title": "The Gift of Fear",
+    "author": "Gavin de Becker",
+    "category": "Behavior",
+    "language": "EN",
+    "cover": "covers/behavior.jpg",
+    "file": "https://drive.google.com/file/d/137RzHiD2kIsStTOkKef-yIu_w7lYA2NP/view?usp=sharing"
+  },
+  {
+    "title": "Manual de sobrevivência",
+    "author": "John Wiseman",
+    "category": "Survival",
+    "language": "PT",
+    "cover": "covers/sobrevivencia.jpg",
+    "file": "https://drive.google.com/file/d/10QU4ugmmFatZ7HQOHMJacqJlCFodkmx0/view?usp=sharing"
+  },
+  {
+    "title": "Bloody Brazilian Knife Fightin Techniques",
+    "author": "Rick Nakayama",
+    "category": "Combat",
+    "language": "EN",
+    "cover": "covers/knife.jpg",
+    "file": "https://drive.google.com/file/d/12FcZmwgPyOzgvNtLmHq87dG4FjlHa7C7/view?usp=sharing"
+  },
+  {
+    "title": "The Modern Bodyguard",
+    "author": "Peter Consterdine",
+    "category": "Bodyguard",
+    "language": "EN",
+    "cover": "covers/bodyguard.jpg",
+    "file": "https://drive.google.com/file/d/19nBT66ZE6b3vtxuKDSTLjzutIRQ5HBVR/view?usp=sharing"
+  },
+  {
+    "title": "Fit to Fight",
+    "author": "Peter Consterdine",
+    "category": "Combat",
+    "language": "EN",
+    "cover": "covers/fight.jpg",
+    "file": "https://drive.google.com/file/d/1Ynl9bQkrk41-WYE-GKX1q9dCkqY0_Cvv/view?usp=sharing"
+  },
+  {
+    "title": "David's Tool Kit",
+    "author": "Ragnar Benson",
+    "category": "Combat",
+    "language": "EN",
+    "cover": "covers/davidstool.jpg",
+    "file": "https://drive.google.com/file/d/1RCDm5OO4QJe7uLCAaigPdfdwtwHVZQXS/view?usp=sharing"
+  },
+  {
+    "title": "Convict Conditioning",
+    "author": "Paul Wade",
+    "category": "Training",
+    "language": "EN",
+    "cover": "covers/convict.jpg",
+    "file": "https://drive.google.com/file/d/1RlgIdlZZuhgm1P6y27qLfEMCI59YSPzS/view?usp=sharing"
+  },
+  {
+    "title": "Convict Conditioning 2",
+    "author": "Paul Wade",
+    "category": "Training",
+    "language": "EN",
+    "cover": "covers/convict2.jpg",
+    "file": "https://drive.google.com/file/d/1XB1JCE4JCy_gfkvXwGZUTztzZQ8NutC5/view?usp=sharing"
+  },
+  {
+    "title": "Manual of the baratero",
+    "author": "James Loriega",
+    "category": "Combat",
+    "language": "EN",
+    "cover": "covers/baratero.jpg",
+    "file": "https://drive.google.com/file/d/11B-gVYXmYod4Jn0GcCVZ_ysPNAhm3vGf/view?usp=sharing"
+  },
+  {
+    "title": "Curso Técnico de Nós e Amarras",
+    "author": "União dos Escoteiros do Brasil",
+    "category": "Survival",
+    "language": "PT",
+    "cover": "covers/amarres.jpg",
+    "file": "https://drive.google.com/file/d/1cGymoXqSPI_RkQxEy7WRupqR6ll5KMRW/view?usp=sharing"
+  },
+  {
+    "title": "Self Defense - Knife Fighting Manual Techniques",
+    "author": "Don Pentecost",
+    "category": "Combat",
+    "language": "EN",
+    "cover": "covers/knife2.jpg",
+    "file": "https://drive.google.com/file/d/1TPP8lpgOKNM5dXdbroA2AllOTS9_x3ki/view?usp=sharing"
+  },
+  {
+    "title": "Manual do Arquiteto Descalço",
+    "author": "Johan Van Lengen",
+    "category": "Architecture",
+    "language": "PT",
+    "cover": "covers/arquitecto.jpg",
+    "file": "https://drive.google.com/file/d/1TPP8lpgOKNM5dXdbroA2AllOTS9_x3ki/view?usp=sharing"
+  },
+  {
+    "title": "Manual do Escoteiro Mirim",
+    "author": "Editora Abril",
+    "category": "Survival",
+    "language": "PT",
+    "cover": "covers/escoteiro.jpg",
+    "file": "https://drive.google.com/file/d/1vpv3ZxMCWoc3L1N0xwhwOyuhv2MIgY5M/view?usp=sharing"
+  },
+  {
+    "title": "Streetwise, Be Your Own Bodyguard",
+    "author": "Peter Consterdine",
+    "category": "Bodyguard",
+    "language": "EN",
+    "cover": "covers/streetwise.jpg",
+    "file": "https://drive.google.com/file/d/1MlW3S10NijSO4LI8Pq2PeDCafRKIjtnm/view?usp=sharing"
+  },
+  {
+    "title": "Advanced Bushcraft: An Expert Field Guide to the Art of Wilderness Survival",
+    "author": "Dave Canterbury",
+    "category": "Bushcraft",
+    "language": "EN",
+    "cover": "covers/bushcraft.png",
+    "file": "https://drive.google.com/file/d/1i1Eo6tdvJAvG3HSnL7p0qIKd_Ci5GRTp/view?usp=sharing"
+  },
+  {
+    "title": "Black Medicine: the dark art of death",
+    "author": "N. Mashiro",
+    "category": "Combat",
+    "language": "EN",
+    "cover": "covers/blackmedicine.jpg",
+    "file": "https://drive.google.com/file/d/1VOGTUlmmB5fWzJk1Yw9Of1F-h_Ofay1A/view?usp=sharing"
+  },
+  {
+    "title": "The Bushcraft Field Guide to Trapping, Gathering & Cooking in the Wild",
+    "author": "Dave Canterbury",
+    "category": "Bushcraft",
+    "language": "EN",
+    "cover": "covers/bushcraft3.png",
+    "file": "https://drive.google.com/file/d/1rBKmY4RlCvUgbI4CfNUI_ObAoOO4yJ5Z/view?usp=sharing"
   }
 ]
